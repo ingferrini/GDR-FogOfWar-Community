@@ -22,7 +22,7 @@ Se preferisci eseguire tutto da una cartella locale, scarica lo ZIP più recente
 
 Usa i modelli nella sezione **Issues**. Per un bug sono obbligatori versione, browser, sistema operativo, risultato atteso, risultato effettivo e l'intero flusso numerato che permette di riprodurlo.
 
-Le proposte vengono valutate per la roadmap; non sono accettate pull request. Non allegare mappe protette da copyright, dati privati o progetti di gioco non destinati alla pubblicazione.
+Le proposte vengono valutate per la [roadmap pubblica](ROADMAP.md); non sono accettate pull request. Non allegare mappe protette da copyright, dati privati o progetti di gioco non destinati alla pubblicazione.
 
 ## Licenza
 
@@ -52,7 +52,7 @@ To run everything from a local folder, download the latest ZIP from [Releases](h
 
 Use the templates under **Issues**. Bug reports must include the version, browser, operating system, expected result, actual result, and the complete numbered workflow needed to reproduce the problem.
 
-Suggestions may be considered for the roadmap; pull requests are not accepted. Do not attach copyrighted maps, private data, or campaign projects that are not meant to be public.
+Suggestions may be considered for the [public roadmap](ROADMAP.md); pull requests are not accepted. Do not attach copyrighted maps, private data, or campaign projects that are not meant to be public.
 
 ### Licence
 

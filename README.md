@@ -8,14 +8,15 @@ Il progetto non vuole sostituire un VTT: privilegia pochi strumenti affidabili p
 
 ## Installazione
 
-1. Apri la sezione **Releases** e scarica `GDR-FogOfWar-v0.1.1.zip`.
-2. Estrai interamente lo ZIP in una cartella locale.
-3. Verifica di avere Node.js 20.19+ o 22.12+.
-4. Avvia `start-windows.bat`.
-5. Apri `http://127.0.0.1:5173` in Edge o Chrome.
-6. In Edge puoi scegliere **App → Installa Fog of War**.
+1. Apri [GDR FogOfWar](https://ingferrini.github.io/GDR-FogOfWar-Community/) con Edge o Chrome.
+2. In Edge usa l'icona **Installa app** nella barra degli indirizzi oppure **Menu → App → Installa Fog of War**.
+3. Avvia almeno una volta la DM View e la Player View mentre sei online: in seguito l'app funziona anche offline.
 
-Non è necessario reinstallare la PWA a ogni aggiornamento. Conserva sempre un export `.fogproject.zip` dei progetti importanti prima di cambiare versione.
+Non servono Node.js, download o installazioni manuali. Gli aggiornamenti vengono caricati automaticamente e i dati restano nel browser; conserva comunque un export `.fogproject.zip` dei progetti importanti.
+
+### Installazione manuale alternativa
+
+Se preferisci eseguire tutto da una cartella locale, scarica lo ZIP più recente dalla sezione [Releases](https://github.com/ingferrini/GDR-FogOfWar-Community/releases), estrailo completamente e avvia `start-windows.bat`. Questa modalità richiede Node.js 20.19+ o 22.12+.
 
 ## Segnalazioni e richieste
 
@@ -37,14 +38,15 @@ It is not intended to replace a VTT: its focus is a small, reliable toolkit for 
 
 ### Installation
 
-1. Open **Releases** and download `GDR-FogOfWar-v0.1.1.zip`.
-2. Extract the entire ZIP to a local folder.
-3. Make sure Node.js 20.19+ or 22.12+ is installed.
-4. Run `start-windows.bat`.
-5. Open `http://127.0.0.1:5173` in Edge or Chrome.
-6. In Edge, you may choose **Apps → Install Fog of War**.
+1. Open [GDR FogOfWar](https://ingferrini.github.io/GDR-FogOfWar-Community/) in Edge or Chrome.
+2. In Edge, use the **Install app** icon in the address bar or choose **Menu → Apps → Install Fog of War**.
+3. Open the DM View and Player View once while online; the installed app will then work offline.
 
-You do not need to reinstall the PWA after every update. Always export important projects as `.fogproject.zip` before changing versions.
+Node.js, downloads, and manual setup are not required. Updates load automatically and data remains in your browser; always keep important projects backed up as `.fogproject.zip` files.
+
+#### Alternative manual installation
+
+To run everything from a local folder, download the latest ZIP from [Releases](https://github.com/ingferrini/GDR-FogOfWar-Community/releases), extract it completely, and run `start-windows.bat`. This option requires Node.js 20.19+ or 22.12+.
 
 ### Reports and requests
 

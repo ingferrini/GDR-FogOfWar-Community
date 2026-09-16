@@ -12,7 +12,7 @@ body:
     id: version
     attributes:
       label: Versione / Version
-      placeholder: v0.1.1
+      placeholder: v0.3.0
     validations:
       required: true
   - type: dropdown

@@ -1,0 +1,79 @@
+name: Bug report / Segnalazione bug
+description: Report a reproducible problem with the complete workflow.
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie. Compila tutti i campi e descrivi l'intero flusso che porta al problema.
+        Thank you. Complete every field and describe the full workflow that leads to the problem.
+  - type: input
+    id: version
+    attributes:
+      label: Versione / Version
+      placeholder: v0.1.1
+    validations:
+      required: true
+  - type: dropdown
+    id: installation
+    attributes:
+      label: Installazione / Installation
+      options:
+        - PWA installata / Installed PWA
+        - Browser
+        - Pacchetto ZIP locale / Local ZIP package
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Sistema e browser / System and browser
+      placeholder: Windows 11 24H2, Edge 140
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Flusso completo per riprodurre / Complete reproduction workflow
+      description: Include preparation, selected map, tools, settings, actions, and the exact step where the problem appears.
+      placeholder: |
+        1. Avvio l'app e apro...
+        2. Seleziono la mappa...
+        3. Imposto...
+        4. Il problema compare quando...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Risultato atteso / Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Risultato effettivo / Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: frequency
+    attributes:
+      label: Frequenza e tentativi / Frequency and attempts
+      placeholder: Sempre; 4 tentativi su 4 / Always; 4 of 4 attempts
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot, video o log / Screenshots, video, or logs
+      description: Remove private data and do not upload copyrighted maps.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Verifiche / Checks
+      options:
+        - label: Ho cercato issue duplicate / I searched for duplicate issues
+          required: true
+        - label: Gli allegati non contengono dati privati o mappe protette / Attachments contain no private data or copyrighted maps
+          required: true

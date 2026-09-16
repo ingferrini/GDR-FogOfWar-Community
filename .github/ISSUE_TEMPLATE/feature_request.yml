@@ -1,0 +1,38 @@
+name: Richiesta funzionalità / Feature request
+description: Suggest an improvement for in-person tabletop play.
+title: "[FEATURE] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema al tavolo / Tabletop problem
+      description: Describe the real in-person situation this would improve.
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Flusso attuale / Current workflow
+      placeholder: Describe the complete workflow you use today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Comportamento proposto / Proposed behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative considerate / Alternatives considered
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Ambito / Scope
+      options:
+        - label: La proposta riguarda sessioni dal vivo e non richiede di trasformare il progetto in un VTT / This is for in-person play and does not require turning the project into a VTT
+          required: true
+        - label: Ho cercato richieste duplicate / I searched for duplicate requests
+          required: true

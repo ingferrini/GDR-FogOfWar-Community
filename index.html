@@ -8,9 +8,9 @@
     <link rel="icon" href="./icon-32.png" type="image/png" sizes="32x32" />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <title>Fog of War — DM</title>
-    <script type="module" crossorigin src="./assets/dm-SkrK4HEi.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/sync-3XRc1ssA.js">
-    <link rel="stylesheet" crossorigin href="./assets/sync-CiuOz8L_.css">
+    <script type="module" crossorigin src="./assets/dm-CdtMYqdq.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/sync-1AueEYAX.js">
+    <link rel="stylesheet" crossorigin href="./assets/sync-FZfGMjYx.css">
   </head>
   <body>
     <main id="app">
@@ -39,6 +39,7 @@
         <section id="controls" hidden>
           <button id="open-player" class="primary wide">Apri Player View</button>
           <button data-tool="pointer" class="wide" title="Puntatore live (U)">◉ Puntatore</button>
+          <button id="toggle-combat" class="wide">⚔ Inizia combattimento</button>
 
           <div class="tool-section" data-control-section="fog">
             <button type="button" class="section-title section-toggle" aria-expanded="true"><span>Fog of War</span></button>
@@ -92,6 +93,7 @@
               <span class="field-with-help">Caselle colpite <span class="coverage-help"><button type="button" class="info-button" aria-label="Spiega i criteri delle caselle colpite" aria-describedby="coverage-tooltip">ⓘ</button><span id="coverage-tooltip" class="coverage-tooltip" role="tooltip"><span><strong>DMG 2024</strong> Una casella è colpita se la sagoma ne copre almeno metà.</span><span><strong>Xanathar: Template</strong> Basta che una parte della casella sia coperta; il solo contatto col bordo non basta.</span><span><strong>Xanathar: Token</strong> Usa pattern discreti allineati alla griglia: contano soltanto le caselle evidenziate.</span></span></span></span>
               <select id="template-coverage" aria-label="Caselle colpite"><option value="half">DMG 2024: almeno metà</option><option value="touch" selected>Xanathar: Template</option><option value="token">Xanathar: Token</option></select>
             </div>
+            <button id="place-template-player" class="wide" disabled>Disegna dalla Player View</button>
             <button id="clear-template" class="wide" disabled>Rimuovi sagoma</button>
             <p id="template-hint" class="overlay-hint">Richiede una griglia calibrata.</p>
           </div>
@@ -188,6 +190,18 @@
 
       <section class="stage" id="stage">
         <canvas id="map-canvas" aria-label="Mappa e Fog of War"></canvas>
+        <aside id="combat-panel" class="combat-panel dm-combat-panel" aria-label="Iniziativa" hidden>
+          <header><div><strong>Iniziativa</strong><small id="combat-round">Round 1</small></div><div class="combat-header-actions"><button id="collapse-combat" aria-expanded="true" title="Riduci iniziativa">›</button><button id="end-combat" class="danger">Termina</button></div></header>
+          <label class="check-row"><input id="combat-public" type="checkbox" /> Mostra ai giocatori</label>
+          <div class="combat-turn-controls"><button id="combat-previous" title="Turno precedente">←</button><button id="combat-next" class="primary" title="Turno successivo">Turno successivo →</button></div>
+          <form id="combat-add-form" class="combat-add-form">
+            <input id="combat-name" maxlength="80" placeholder="Nome partecipante" aria-label="Nome partecipante" required />
+            <input id="combat-initiative" type="number" min="-99" max="99" value="10" aria-label="Iniziativa" required />
+            <select id="combat-type" aria-label="Tipo partecipante"><option value="player">Giocatore</option><option value="ally">Alleato</option><option value="enemy" selected>Nemico</option></select>
+            <button class="primary">+ Aggiungi</button>
+          </form>
+          <div id="combat-list" class="combat-list"></div>
+        </aside>
         <div id="empty-state" class="empty-state">
           <div class="empty-icon">◇</div>
           <h1>La tua mappa, senza distrazioni</h1>

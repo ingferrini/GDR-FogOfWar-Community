@@ -8,14 +8,18 @@
     <link rel="icon" href="./icon-32.png" type="image/png" sizes="32x32" />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <title>Fog of War — Player</title>
-    <script type="module" crossorigin src="./assets/player-6mqhpKAR.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/sync-3XRc1ssA.js">
-    <link rel="stylesheet" crossorigin href="./assets/sync-CiuOz8L_.css">
+    <script type="module" crossorigin src="./assets/player-Pki3GOwt.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/sync-1AueEYAX.js">
+    <link rel="stylesheet" crossorigin href="./assets/sync-FZfGMjYx.css">
   </head>
   <body class="player-body">
     <canvas id="player-canvas" aria-label="Mappa giocatori"></canvas>
+    <aside id="player-combat" class="combat-panel player-combat-panel" aria-label="Iniziativa" hidden>
+      <header><div><strong>Iniziativa</strong><small id="player-combat-round">Round 1</small></div></header>
+      <div id="player-combat-list" class="combat-list public-combat-list"></div>
+    </aside>
     <div id="pointer-live" class="pointer-live"></div>
-    <div id="player-mode" class="player-mode" hidden>Posiziona token · click conferma · Esc annulla</div>
+    <div id="player-mode" class="player-mode" hidden></div>
     <button id="fullscreen" class="fullscreen-button">Schermo intero</button>
   </body>
 </html>

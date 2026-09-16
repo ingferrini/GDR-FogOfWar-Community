@@ -1,14 +1,14 @@
-# GDR FogOfWoar
+# GDR FogOfWar
 
 **ITA** · [English](#english)
 
-GDR FogOfWoar è uno strumento locale per gestire battlemap, Fog of War, griglie e sagome durante sessioni di gioco di ruolo **dal vivo**, usando un secondo schermo o un proiettore.
+GDR FogOfWar è uno strumento locale per gestire battlemap, Fog of War, griglie e sagome durante sessioni di gioco di ruolo **dal vivo**, usando un secondo schermo o un proiettore.
 
 Il progetto non vuole sostituire un VTT: privilegia pochi strumenti affidabili per il tavolo fisico. Questo repository pubblico contiene release ufficiali, documentazione e issue; il codice sorgente è mantenuto in un repository privato e le pull request non sono accettate.
 
 ## Installazione
 
-1. Apri la sezione **Releases** e scarica `GDR-FogOfWoar-v0.1.1.zip`.
+1. Apri la sezione **Releases** e scarica `GDR-FogOfWar-v0.1.1.zip`.
 2. Estrai interamente lo ZIP in una cartella locale.
 3. Verifica di avere Node.js 20.19+ o 22.12+.
 4. Avvia `start-windows.bat`.
@@ -31,13 +31,13 @@ Uso personale e non commerciale consentito secondo la [PolyForm Strict License 1
 
 ## English
 
-GDR FogOfWoar is a local tool for managing battlemaps, Fog of War, grids, and templates during **in-person** tabletop role-playing sessions with a second screen or projector.
+GDR FogOfWar is a local tool for managing battlemaps, Fog of War, grids, and templates during **in-person** tabletop role-playing sessions with a second screen or projector.
 
 It is not intended to replace a VTT: its focus is a small, reliable toolkit for the physical table. This public repository contains official releases, documentation, and issue tracking. The source code is maintained privately, and pull requests are not accepted.
 
 ### Installation
 
-1. Open **Releases** and download `GDR-FogOfWoar-v0.1.1.zip`.
+1. Open **Releases** and download `GDR-FogOfWar-v0.1.1.zip`.
 2. Extract the entire ZIP to a local folder.
 3. Make sure Node.js 20.19+ or 22.12+ is installed.
 4. Run `start-windows.bat`.

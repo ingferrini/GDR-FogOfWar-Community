@@ -23,12 +23,12 @@ Il principio resta invariato: **uno strumento semplice e affidabile per sessioni
 - Evidenziazione dei token colpiti dalle aree d'effetto. **Completato.**
 - Pozza di sangue pubblica soltanto su comando del DM. **Completato.**
 
-## v0.6.0 — Sicurezza e rapidità al tavolo
+## v0.6.0 — Sicurezza e rapidità al tavolo — Completata
 
-- **Duplicazione mappa:** copia indipendente di immagine e stato della mappa; il combattimento attivo viene azzerato per evitare prosecuzioni accidentali.
-- **Snapshot Fog of War:** snapshot nominati per mappa, con creazione, rinomina, ripristino confermato ed eliminazione; inclusi negli export/import.
-- **Hotkey configurabili:** personalizzazione delle azioni esistenti, controllo dei conflitti, ripristino dei valori predefiniti e preferenze locali al browser.
-- Migrazione non distruttiva, sincronizzazione DM/Player, persistenza, ZIP e PWA offline verificati con test automatici.
+- **Duplicazione mappa:** copia indipendente di immagine e stato della mappa; il combattimento attivo viene azzerato per evitare prosecuzioni accidentali. **Completato.**
+- **Snapshot Fog of War:** snapshot nominati per mappa, con creazione, rinomina, ripristino confermato ed eliminazione; inclusi negli export/import. **Completato.**
+- **Hotkey configurabili:** personalizzazione delle azioni esistenti, controllo dei conflitti, ripristino dei valori predefiniti e preferenze locali al browser. **Completato.**
+- Migrazione non distruttiva, sincronizzazione DM/Player, persistenza, ZIP e PWA offline verificati con test automatici. **Completato.**
 
 ## Miglioramenti successivi
 
@@ -65,12 +65,12 @@ The guiding principle remains: **a simple, reliable tool for in-person sessions,
 - Highlight stored tokens affected by area-of-effect templates. **Completed.**
 - Public blood pools placed only on DM command. **Completed.**
 
-### v0.6.0 — Tabletop safety and speed
+### v0.6.0 — Tabletop safety and speed — Completed
 
-- **Map duplication:** independent copy of the map image and state; active combat is reset to prevent accidental continuation.
-- **Fog of War snapshots:** named per-map snapshots with create, rename, confirmed restore, and delete actions; included in exports/imports.
-- **Configurable hotkeys:** customisation of existing actions, conflict detection, reset to defaults, and browser-local preferences.
-- Non-destructive migration, DM/Player synchronisation, persistence, ZIP, and offline PWA behaviour verified by automated tests.
+- **Map duplication:** independent copy of the map image and state; active combat is reset to prevent accidental continuation. **Completed.**
+- **Fog of War snapshots:** named per-map snapshots with create, rename, confirmed restore, and delete actions; included in exports/imports. **Completed.**
+- **Configurable hotkeys:** customisation of existing actions, conflict detection, reset to defaults, and browser-local preferences. **Completed.**
+- Non-destructive migration, DM/Player synchronisation, persistence, ZIP, and offline PWA behaviour verified by automated tests. **Completed.**
 
 ### Later improvements
 

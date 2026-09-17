@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.6.0 — 2026-09-17
+
+- Duplicazione indipendente della mappa corrente, con stato persistente copiato e combattimento attivo azzerato.
+- Snapshot nominati della Fog of War per mappa: creazione, rinomina, ripristino confermato ed eliminazione.
+- Snapshot inclusi nei salvataggi su cartella e negli export/import di mappa e progetto.
+- Ripristino della nebbia sincronizzato con la Player View e gestito come singola azione Annulla/Ripeti.
+- Scorciatoie configurabili con rilevamento dei conflitti, blocco delle combinazioni riservate e ripristino dei valori predefiniti.
+- Pannello scorciatoie allineato alla sidebar ridimensionabile e cache PWA aggiornata.
+
+---
+
+- Independent duplication of the current map, copying persistent state while resetting active combat.
+- Named per-map Fog of War snapshots: create, rename, confirmed restore, and delete.
+- Snapshots included in folder saves and map/project exports and imports.
+- Fog restoration synchronised with the Player View and handled as one Undo/Redo action.
+- Configurable hotkeys with conflict detection, reserved-combination protection, and reset to defaults.
+- Hotkey panel aligned with the resizable sidebar and updated PWA cache.
+
 ## v0.5.0 — 2026-09-16
 
 - Sidebar iniziativa sovrapposta con round, turno attivo, pareggi e visibilità controllata dal DM.

@@ -6,7 +6,7 @@ GDR FogOfWar è uno strumento locale per gestire battlemap, Fog of War, griglie 
 
 Il progetto non vuole sostituire un VTT: privilegia pochi strumenti affidabili per il tavolo fisico. Questo repository pubblico contiene release ufficiali, documentazione e issue; il codice sorgente è mantenuto in un repository privato e le pull request non sono accettate.
 
-La versione **0.5.0** aggiunge gestione dell'iniziativa e del combattimento, statistiche private per il DM, collegamento ai token, indicatore di inizio turno, pozze di sangue manuali ed evidenziazione dei token colpiti dalle aree d'effetto.
+La versione **0.6.0** aggiunge duplicazione indipendente delle mappe, snapshot nominati della Fog of War e scorciatoie configurabili con controllo dei conflitti.
 
 ## Installazione
 
@@ -38,7 +38,7 @@ GDR FogOfWar is a local tool for managing battlemaps, Fog of War, grids, and tem
 
 It is not intended to replace a VTT: its focus is a small, reliable toolkit for the physical table. This public repository contains official releases, documentation, and issue tracking. The source code is maintained privately, and pull requests are not accepted.
 
-Version **0.5.0** adds initiative and combat tracking, private DM stats, token links, a turn-start marker, manually placed blood pools, and area-of-effect token highlighting.
+Version **0.6.0** adds independent map duplication, named Fog of War snapshots, and configurable hotkeys with conflict detection.
 
 ### Installation
 

@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.7.0 — 2026-09-17
+
+- Tutorial guidato in dieci passaggi con spotlight sui controlli reali della DM View.
+- Navigazione avanti/indietro, uscita immediata e attesa della prima mappa prima di proseguire.
+- Avanzamento automatico dopo la creazione o importazione della mappa.
+- Ripresa del passaggio dopo il reload e comandi permanenti per riaprire il tutorial.
+- Contenuti ITA/ENG e posizionamento adattivo a sidebar, scroll e dimensioni della finestra.
+
+---
+
+- Ten-step guided tutorial with spotlights on actual DM View controls.
+- Back/next navigation, immediate exit, and first-map gating before continuing.
+- Automatic progression after creating or importing a map.
+- Step resume after reload and permanent commands to restart the tutorial.
+- ITA/ENG content with adaptive placement for sidebar, scrolling, and window size.
+
 ## v0.6.0 — 2026-09-17
 
 - Duplicazione indipendente della mappa corrente, con stato persistente copiato e combattimento attivo azzerato.

@@ -30,9 +30,18 @@ Il principio resta invariato: **uno strumento semplice e affidabile per sessioni
 - **Hotkey configurabili:** personalizzazione delle azioni esistenti, controllo dei conflitti, ripristino dei valori predefiniti e preferenze locali al browser. **Completato.**
 - Migrazione non distruttiva, sincronizzazione DM/Player, persistenza, ZIP e PWA offline verificati con test automatici. **Completato.**
 
-## Miglioramenti successivi
+## v0.7.0 — Tutorial guidato — Completata
 
-- Da definire dopo il collaudo della v0.6.0 e le segnalazioni della community.
+- Tour ITA/ENG in dieci passaggi con spotlight sui controlli reali. **Completato.**
+- Primo avvio, uscita, ripresa e riapertura manuale. **Completato.**
+- Avanzamento automatico dopo l'importazione della prima mappa. **Completato.**
+
+## v0.7.1 — Rifinitura tutorial
+
+- Spotlight più precisi per gruppi di controlli e sezioni alte.
+- Callout più adattivi alle diverse risoluzioni e larghezze della sidebar.
+- Passaggi maggiormente legati alle interazioni reali e testi più sintetici.
+- Mini-tour contestuali per le funzioni avanzate, da valutare dopo le prove al tavolo.
 
 ## Fuori ambito
 
@@ -72,9 +81,18 @@ The guiding principle remains: **a simple, reliable tool for in-person sessions,
 - **Configurable hotkeys:** customisation of existing actions, conflict detection, reset to defaults, and browser-local preferences. **Completed.**
 - Non-destructive migration, DM/Player synchronisation, persistence, ZIP, and offline PWA behaviour verified by automated tests. **Completed.**
 
-### Later improvements
+### v0.7.0 — Guided tutorial — Completed
 
-- To be defined after v0.6.0 tabletop testing and community feedback.
+- Ten-step ITA/ENG tour with spotlights on actual controls. **Completed.**
+- First run, exit, resume, and manual restart. **Completed.**
+- Automatic progression after importing the first map. **Completed.**
+
+### v0.7.1 — Tutorial refinement
+
+- More precise spotlights for control groups and tall sections.
+- More adaptive callouts across resolutions and sidebar widths.
+- Steps tied more closely to actual interactions, with shorter copy.
+- Contextual mini-tours for advanced features, to be evaluated after tabletop testing.
 
 ### Out of scope
 

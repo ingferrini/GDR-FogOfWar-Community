@@ -8,9 +8,9 @@
     <link rel="icon" href="./icon-32.png" type="image/png" sizes="32x32" />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <title>Fog of War — DM</title>
-    <script type="module" crossorigin src="./assets/dm-Ckb6_TPI.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/sync-BOLWjUvS.js">
-    <link rel="stylesheet" crossorigin href="./assets/sync-C6YIh-0l.css">
+    <script type="module" crossorigin src="./assets/dm-CsGCzW7J.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/sync-BHCmOLbf.js">
+    <link rel="stylesheet" crossorigin href="./assets/sync-BawW2DQ-.css">
   </head>
   <body>
     <main id="app">
@@ -184,13 +184,14 @@
           <div class="map-actions"><button id="rename-map">Rinomina</button><button id="duplicate-map">Duplica</button><button id="delete-map" class="danger">Elimina</button><button id="export-package">Esporta mappa</button><button id="export-project">Esporta progetto</button><button id="help" class="hotkey-button" aria-expanded="false" aria-controls="shortcut-panel">⌨ Hotkey</button></div>
         </section>
 
-        <footer><span id="save-status">Pronto</span></footer>
+        <footer><span id="save-status">Pronto</span><button id="restart-tutorial-footer" class="text-button">Tutorial</button></footer>
         <aside id="shortcut-panel" class="shortcut-panel" aria-label="Scorciatoie da tastiera" hidden>
           <header><h2>Hotkey</h2><button id="close-hotkeys" aria-label="Chiudi scorciatoie">×</button></header>
           <p class="overlay-hint">Seleziona una combinazione, poi premi la nuova hotkey.</p>
           <div id="hotkey-list" class="hotkey-list"></div>
           <p id="hotkey-status" class="hotkey-status" aria-live="polite"></p>
           <button id="reset-hotkeys" class="wide">Ripristina predefinite</button>
+          <button id="restart-tutorial" class="wide tutorial-restart">Ripeti tutorial</button>
           <h3>Comandi fissi</h3>
           <dl><dt>Chiudi poligono</dt><dd>Clicca nuovamente il primo punto</dd><dt>Esc</dt><dd>Annulla poligono, sagoma o piazzamento</dd><dt>Spazio + trascina</dt><dd>Sposta mappa</dd><dt>Tasto destro + trascina</dt><dd>Sposta mappa</dd><dt>Rotella</dt><dd>Zoom sul puntatore</dd></dl>
         </aside>
@@ -220,6 +221,20 @@
         </div>
       </section>
     </main>
+
+    <div id="tour-layer" class="tour-layer" hidden>
+      <div class="tour-mask" data-tour-mask="top"></div>
+      <div class="tour-mask" data-tour-mask="right"></div>
+      <div class="tour-mask" data-tour-mask="bottom"></div>
+      <div class="tour-mask" data-tour-mask="left"></div>
+      <div id="tour-highlight" class="tour-highlight" aria-hidden="true"></div>
+      <section id="tour-card" class="tour-card" role="dialog" aria-labelledby="tour-title" aria-describedby="tour-body">
+        <div class="tour-card-header"><span id="tour-progress"></span><button id="tour-skip" class="text-button">Salta tutorial</button></div>
+        <h2 id="tour-title"></h2>
+        <p id="tour-body"></p>
+        <div class="tour-actions"><button id="tour-back">Indietro</button><button id="tour-next" class="primary">Avanti</button></div>
+      </section>
+    </div>
 
     <dialog id="import-dialog">
       <form id="import-form" method="dialog">

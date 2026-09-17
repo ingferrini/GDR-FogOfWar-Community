@@ -1,4 +1,4 @@
-const CACHE = "fog-of-war-shell-v3";
+const CACHE = "fog-of-war-shell-v4";
 const PAGES = ["./", "./index.html", "./player.html"];
 const SHELL = [...PAGES, "./manifest.webmanifest", "./icon-32.png", "./icon-192.png", "./icon-512.png", "./icon.svg"];
 

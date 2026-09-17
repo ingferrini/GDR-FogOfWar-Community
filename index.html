@@ -8,9 +8,9 @@
     <link rel="icon" href="./icon-32.png" type="image/png" sizes="32x32" />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <title>Fog of War — DM</title>
-    <script type="module" crossorigin src="./assets/dm-CdtMYqdq.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/sync-1AueEYAX.js">
-    <link rel="stylesheet" crossorigin href="./assets/sync-FZfGMjYx.css">
+    <script type="module" crossorigin src="./assets/dm-Ckb6_TPI.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/sync-BOLWjUvS.js">
+    <link rel="stylesheet" crossorigin href="./assets/sync-C6YIh-0l.css">
   </head>
   <body>
     <main id="app">
@@ -64,6 +64,11 @@
             </label>
             <div class="button-row"><button id="undo" title="Ctrl+Z">↶ Undo</button><button id="redo" title="Ctrl+Y">↷ Redo</button></div>
             <div class="button-row"><button id="reveal-all">Rivela tutto</button><button id="hide-all">Copri tutto</button></div>
+            <div class="fog-snapshots">
+              <div class="fog-snapshot-header"><strong>Snapshot Fog</strong><button id="create-fog-snapshot">+ Salva</button></div>
+              <p id="fog-snapshot-empty" class="overlay-hint">Nessuno snapshot salvato.</p>
+              <div id="fog-snapshot-list" class="fog-snapshot-list"></div>
+            </div>
           </div>
 
           <div class="tool-section template-section collapsed" data-control-section="templates">
@@ -176,13 +181,18 @@
             <p class="overlay-hint">Modifica soltanto l'immagine sul proiettore.</p>
           </div>
 
-          <div class="map-actions"><button id="rename-map">Rinomina</button><button id="delete-map" class="danger">Elimina</button><button id="export-package">Esporta mappa</button><button id="export-project">Esporta progetto</button><button id="help" class="hotkey-button" aria-expanded="false" aria-controls="shortcut-panel">⌨ Hotkey</button></div>
+          <div class="map-actions"><button id="rename-map">Rinomina</button><button id="duplicate-map">Duplica</button><button id="delete-map" class="danger">Elimina</button><button id="export-package">Esporta mappa</button><button id="export-project">Esporta progetto</button><button id="help" class="hotkey-button" aria-expanded="false" aria-controls="shortcut-panel">⌨ Hotkey</button></div>
         </section>
 
         <footer><span id="save-status">Pronto</span></footer>
         <aside id="shortcut-panel" class="shortcut-panel" aria-label="Scorciatoie da tastiera" hidden>
           <header><h2>Hotkey</h2><button id="close-hotkeys" aria-label="Chiudi scorciatoie">×</button></header>
-          <dl><dt>R / H</dt><dd>Pennello rivela / copri</dd><dt>B / N</dt><dd>Rettangolo rivela / copri</dd><dt>C / G</dt><dd>Cerchio / poligono rivela</dd><dt>M / L</dt><dd>Righello / linea</dd><dt>V / A</dt><dd>Cono / area circolare</dd><dt>Q / E</dt><dd>Quadrato / emanazione</dd><dt>T</dt><dd>Nuovo token</dd><dt>U</dt><dd>Puntatore live</dd><dt>Chiudi poligono</dt><dd>Clicca nuovamente il primo punto</dd><dt>Esc</dt><dd>Annulla poligono, sagoma o piazzamento</dd><dt>Spazio + trascina</dt><dd>Sposta mappa</dd><dt>Tasto destro + trascina</dt><dd>Sposta mappa</dd><dt>Rotella</dt><dd>Zoom sul puntatore</dd><dt>Ctrl+Z / Ctrl+Y</dt><dd>Undo / Redo</dd><dt>Canc</dt><dd>Elimina l'elemento selezionato</dd><dt>F</dt><dd>Adatta allo schermo</dd><dt>P</dt><dd>Porta in primo piano Player View</dd><dt>[ / ]</dt><dd>Riduci / aumenta pennello</dd><dt>?</dt><dd>Mostra / nasconde questa guida</dd></dl>
+          <p class="overlay-hint">Seleziona una combinazione, poi premi la nuova hotkey.</p>
+          <div id="hotkey-list" class="hotkey-list"></div>
+          <p id="hotkey-status" class="hotkey-status" aria-live="polite"></p>
+          <button id="reset-hotkeys" class="wide">Ripristina predefinite</button>
+          <h3>Comandi fissi</h3>
+          <dl><dt>Chiudi poligono</dt><dd>Clicca nuovamente il primo punto</dd><dt>Esc</dt><dd>Annulla poligono, sagoma o piazzamento</dd><dt>Spazio + trascina</dt><dd>Sposta mappa</dd><dt>Tasto destro + trascina</dt><dd>Sposta mappa</dd><dt>Rotella</dt><dd>Zoom sul puntatore</dd></dl>
         </aside>
       </aside>
 

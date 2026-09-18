@@ -43,6 +43,17 @@ Il principio resta invariato: **uno strumento semplice e affidabile per sessioni
 - Passaggi maggiormente legati alle interazioni reali e testi più sintetici.
 - Mini-tour contestuali per le funzioni avanzate, da valutare dopo le prove al tavolo.
 
+## v1.0.0 — Prima versione stabile
+
+- **Correttezza visiva:** risoluzione definitiva della rotazione senza deformazioni e verifica di pan, zoom, adattamento, blocco e sincronizzazione su schermi differenti.
+- **Controllo pre-sessione:** pannello non bloccante `Sessione pronta?` per mappa, Player View, versione, salvataggi pendenti, visuale e disponibilità offline.
+- **Sicurezza dei progetti:** formato versionato, migrazioni dalla v0.1.1, copia di sicurezza prima delle sostituzioni, import atomico e round-trip degli ZIP.
+- **PWA e aggiornamenti:** versione visibile, aggiornamento controllato e protezione da cache differenti tra DM View e Player View.
+- **Palette puntatore:** circa dieci colori predefiniti ad alto contrasto per punto e ping; giallo attuale come predefinito, preferenza locale e nessun color picker avanzato.
+- **Diagnostica:** export leggibile e privo di contenuti della campagna con versione, ambiente, stato offline/sincronizzazione e ultimi errori tecnici.
+- **Rifinitura:** nomenclature e messaggi ITA/ENG uniformi, completamento della v0.7.1 e feature freeze prima della release.
+- **Criteri di rilascio:** nessun rischio noto di perdita dati, migrazioni e round-trip verificati, matrice Edge/Chrome browser-PWA-offline e collaudo reale su secondo schermo.
+
 ## Fuori ambito
 
 - Dadi, schede personaggio, chat e automazioni da VTT.
@@ -93,6 +104,17 @@ The guiding principle remains: **a simple, reliable tool for in-person sessions,
 - More adaptive callouts across resolutions and sidebar widths.
 - Steps tied more closely to actual interactions, with shorter copy.
 - Contextual mini-tours for advanced features, to be evaluated after tabletop testing.
+
+### v1.0.0 — First stable release
+
+- **Visual correctness:** definitive distortion-free rotation and verification of pan, zoom, fit, lock, and synchronisation across different displays.
+- **Pre-session check:** non-blocking `Session ready?` panel for map, Player View, version, pending saves, view, and offline availability.
+- **Project safety:** versioned format, migrations from v0.1.1, safety copy before replacement, atomic imports, and ZIP round-trip testing.
+- **PWA and updates:** visible version, controlled updates, and protection against mismatched DM View and Player View caches.
+- **Pointer palette:** around ten predefined high-contrast colours for the pointer dot and ping; current yellow by default, stored locally, with no advanced colour picker.
+- **Diagnostics:** readable export without campaign content, containing version, environment, offline/sync state, and recent technical errors.
+- **Polish:** consistent ITA/ENG naming and messages, completion of v0.7.1, and a feature freeze before release.
+- **Release criteria:** no known data-loss risks, verified migrations and round trips, Edge/Chrome browser-PWA-offline matrix, and real second-screen testing.
 
 ### Out of scope
 

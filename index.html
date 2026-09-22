@@ -8,9 +8,9 @@
     <link rel="icon" href="./icon-32.png" type="image/png" sizes="32x32" />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <title>Fog of War — DM</title>
-    <script type="module" crossorigin src="./assets/dm-CsGCzW7J.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/sync-BHCmOLbf.js">
-    <link rel="stylesheet" crossorigin href="./assets/sync-BawW2DQ-.css">
+    <script type="module" crossorigin src="./assets/dm-Bax9CJC7.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/sync-DVTmk_GO.js">
+    <link rel="stylesheet" crossorigin href="./assets/sync-3nxbS2aG.css">
   </head>
   <body>
     <main id="app">
@@ -43,20 +43,22 @@
 
           <div class="tool-section" data-control-section="fog">
             <button type="button" class="section-title section-toggle" aria-expanded="true"><span>Fog of War</span></button>
-            <div class="fog-action-group" role="group" aria-label="Strumenti per rivelare">
-              <strong>Rivela</strong>
-              <div class="tool-grid">
-                <button data-tool="reveal-brush" title="Rivela con pennello (R)">✎ Pennello</button>
-                <button data-tool="reveal-rectangle" title="Rivela un rettangolo (B)">▭ Rettangolo</button>
-                <button data-tool="reveal-circle" title="Rivela un cerchio (C)">○ Cerchio</button>
-                <button data-tool="reveal-polygon" title="Rivela un poligono (G)">⬠ Poligono</button>
+            <div class="fog-tools">
+              <div class="fog-action-group" role="group" aria-label="Strumenti per rivelare">
+                <strong>Rivela</strong>
+                <div class="tool-grid">
+                  <button data-tool="reveal-brush" title="Rivela con pennello (R)">✎ Pennello</button>
+                  <button data-tool="reveal-rectangle" title="Rivela un rettangolo (B)">▭ Rettangolo</button>
+                  <button data-tool="reveal-circle" title="Rivela un cerchio (C)">○ Cerchio</button>
+                  <button data-tool="reveal-polygon" title="Rivela un poligono (G)">⬠ Poligono</button>
+                </div>
               </div>
-            </div>
-            <div class="fog-action-group" role="group" aria-label="Strumenti per coprire con la nebbia">
-              <strong>Copri con nebbia</strong>
-              <div class="tool-grid">
-                <button data-tool="hide-brush" title="Copri con pennello (H)">✎ Pennello</button>
-                <button data-tool="hide-rectangle" title="Copri un rettangolo (N)">▭ Rettangolo</button>
+              <div class="fog-action-group" role="group" aria-label="Strumenti per coprire con la nebbia">
+                <strong>Copri con nebbia</strong>
+                <div class="tool-grid">
+                  <button data-tool="hide-brush" title="Copri con pennello (H)">✎ Pennello</button>
+                  <button data-tool="hide-rectangle" title="Copri un rettangolo (N)">▭ Rettangolo</button>
+                </div>
               </div>
             </div>
             <label id="brush-size-row" class="range-row">Dimensione pennello <output id="brush-output">100 px</output>
@@ -232,9 +234,25 @@
         <div class="tour-card-header"><span id="tour-progress"></span><button id="tour-skip" class="text-button">Salta tutorial</button></div>
         <h2 id="tour-title"></h2>
         <p id="tour-body"></p>
+        <p id="tour-interaction" class="tour-interaction" hidden></p>
         <div class="tour-actions"><button id="tour-back">Indietro</button><button id="tour-next" class="primary">Avanti</button></div>
       </section>
     </div>
+
+    <dialog id="tutorial-menu-dialog" class="tutorial-menu-dialog">
+      <form method="dialog">
+        <h2>Tutorial</h2>
+        <p class="dialog-hint">Scegli il tour completo oppure ripassa soltanto un argomento.</p>
+        <div class="tutorial-topic-list">
+          <button type="button" data-tour-topic="full"><strong>Tour completo</strong><span>Dalla prima mappa al salvataggio.</span></button>
+          <button type="button" data-tour-topic="fog"><strong>Fog of War</strong><span>Rivela, copri e snapshot.</span></button>
+          <button type="button" data-tour-topic="view"><strong>Visuale e proiezione</strong><span>Zoom, blocco, griglia e preset.</span></button>
+          <button type="button" data-tour-topic="tools"><strong>Componenti e sagome</strong><span>Overlay, token e aree d'effetto.</span></button>
+          <button type="button" data-tour-topic="session"><strong>Combattimento e progetto</strong><span>Iniziativa, salvataggio ed export.</span></button>
+        </div>
+        <div class="dialog-actions"><button value="cancel">Chiudi</button></div>
+      </form>
+    </dialog>
 
     <dialog id="import-dialog">
       <form id="import-form" method="dialog">

@@ -6,7 +6,7 @@ GDR FogOfWar è uno strumento locale per gestire battlemap, Fog of War, griglie 
 
 Il progetto non vuole sostituire un VTT: privilegia pochi strumenti affidabili per il tavolo fisico. Questo repository pubblico contiene release ufficiali, documentazione e issue; il codice sorgente è mantenuto in un repository privato e le pull request non sono accettate.
 
-La versione **0.7.0** aggiunge un tutorial guidato ITA/ENG con spotlight sui comandi, avanzamento dopo l'importazione e ripresa del passaggio corrente.
+La versione **0.7.1** rifinisce il tutorial ITA/ENG con spotlight adattivi, mini-tour contestuali e avanzamento tramite interazioni sicure sui comandi evidenziati.
 
 ## Installazione
 
@@ -38,7 +38,7 @@ GDR FogOfWar is a local tool for managing battlemaps, Fog of War, grids, and tem
 
 It is not intended to replace a VTT: its focus is a small, reliable toolkit for the physical table. This public repository contains official releases, documentation, and issue tracking. The source code is maintained privately, and pull requests are not accepted.
 
-Version **0.7.0** adds an ITA/ENG guided tutorial with control spotlights, post-import progression, and current-step resume.
+Version **0.7.1** refines the ITA/ENG tutorial with adaptive spotlights, contextual mini-tours, and progression through safe interactions with highlighted controls.
 
 ### Installation
 

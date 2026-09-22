@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.7.1 — 2026-09-22
+
+- Selettore con tour completo e mini-tour per Fog of War, visuale/proiezione, componenti/sagome e combattimento/progetto.
+- Spotlight più precisi e callout adattivi con freccia direzionale.
+- Avanzamento facoltativo tramite interazioni sicure, mantenendo sempre disponibile **Avanti**.
+- Testi più sintetici e stato dei tour manuali separato dal tutorial di primo avvio.
+
+---
+
+- Full-tour and mini-tour selector for Fog of War, view/projection, components/templates, and combat/project.
+- More precise spotlights and adaptive callouts with directional arrows.
+- Optional progression through safe interactions, while **Next** always remains available.
+- Shorter copy and manual-tour state kept separate from first-run onboarding.
+
 ## v0.7.0 — 2026-09-17
 
 - Tutorial guidato in dieci passaggi con spotlight sui controlli reali della DM View.

@@ -36,12 +36,12 @@ Il principio resta invariato: **uno strumento semplice e affidabile per sessioni
 - Primo avvio, uscita, ripresa e riapertura manuale. **Completato.**
 - Avanzamento automatico dopo l'importazione della prima mappa. **Completato.**
 
-## v0.7.1 — Rifinitura tutorial
+## v0.7.1 — Rifinitura tutorial — Completata
 
-- Spotlight più precisi per gruppi di controlli e sezioni alte.
-- Callout più adattivi alle diverse risoluzioni e larghezze della sidebar.
-- Passaggi maggiormente legati alle interazioni reali e testi più sintetici.
-- Mini-tour contestuali per le funzioni avanzate, da valutare dopo le prove al tavolo.
+- Spotlight più precisi per gruppi di controlli e sezioni alte. **Completato.**
+- Callout più adattivi alle diverse risoluzioni e larghezze della sidebar. **Completato.**
+- Passaggi maggiormente legati alle interazioni reali e testi più sintetici. **Completato.**
+- Mini-tour contestuali per Fog of War, visuale/proiezione, componenti/sagome e combattimento/progetto. **Completato.**
 
 ## v1.0.0 — Prima versione stabile
 
@@ -51,7 +51,7 @@ Il principio resta invariato: **uno strumento semplice e affidabile per sessioni
 - **PWA e aggiornamenti:** versione visibile, aggiornamento controllato e protezione da cache differenti tra DM View e Player View.
 - **Palette puntatore:** circa dieci colori predefiniti ad alto contrasto per punto e ping; giallo attuale come predefinito, preferenza locale e nessun color picker avanzato.
 - **Diagnostica:** export leggibile e privo di contenuti della campagna con versione, ambiente, stato offline/sincronizzazione e ultimi errori tecnici.
-- **Rifinitura:** nomenclature e messaggi ITA/ENG uniformi, completamento della v0.7.1 e feature freeze prima della release.
+- **Rifinitura:** nomenclature e messaggi ITA/ENG uniformi e feature freeze prima della release.
 - **Criteri di rilascio:** nessun rischio noto di perdita dati, migrazioni e round-trip verificati, matrice Edge/Chrome browser-PWA-offline e collaudo reale su secondo schermo.
 
 ## Fuori ambito
@@ -98,12 +98,12 @@ The guiding principle remains: **a simple, reliable tool for in-person sessions,
 - First run, exit, resume, and manual restart. **Completed.**
 - Automatic progression after importing the first map. **Completed.**
 
-### v0.7.1 — Tutorial refinement
+### v0.7.1 — Tutorial refinement — Completed
 
-- More precise spotlights for control groups and tall sections.
-- More adaptive callouts across resolutions and sidebar widths.
-- Steps tied more closely to actual interactions, with shorter copy.
-- Contextual mini-tours for advanced features, to be evaluated after tabletop testing.
+- More precise spotlights for control groups and tall sections. **Completed.**
+- More adaptive callouts across resolutions and sidebar widths. **Completed.**
+- Steps tied more closely to actual interactions, with shorter copy. **Completed.**
+- Contextual mini-tours for Fog of War, view/projection, components/templates, and combat/project. **Completed.**
 
 ### v1.0.0 — First stable release
 
@@ -113,7 +113,7 @@ The guiding principle remains: **a simple, reliable tool for in-person sessions,
 - **PWA and updates:** visible version, controlled updates, and protection against mismatched DM View and Player View caches.
 - **Pointer palette:** around ten predefined high-contrast colours for the pointer dot and ping; current yellow by default, stored locally, with no advanced colour picker.
 - **Diagnostics:** readable export without campaign content, containing version, environment, offline/sync state, and recent technical errors.
-- **Polish:** consistent ITA/ENG naming and messages, completion of v0.7.1, and a feature freeze before release.
+- **Polish:** consistent ITA/ENG naming and messages, followed by a feature freeze before release.
 - **Release criteria:** no known data-loss risks, verified migrations and round trips, Edge/Chrome browser-PWA-offline matrix, and real second-screen testing.
 
 ### Out of scope

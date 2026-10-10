@@ -6,7 +6,7 @@ GDR FogOfWar è uno strumento locale per gestire battlemap, Fog of War, griglie 
 
 Il progetto non vuole sostituire un VTT: privilegia pochi strumenti affidabili per il tavolo fisico. Questo repository pubblico contiene release ufficiali, documentazione e issue; il codice sorgente è mantenuto in un repository privato e le pull request non sono accettate.
 
-La versione **0.7.1** rifinisce il tutorial ITA/ENG con spotlight adattivi, mini-tour contestuali e avanzamento tramite interazioni sicure sui comandi evidenziati.
+La versione **1.0.0** è la prima release stabile: aggiunge controllo pre-sessione, progetti più sicuri, aggiornamenti PWA espliciti, palette del puntatore e diagnostica rispettosa della privacy.
 
 ## Installazione
 
@@ -14,7 +14,7 @@ La versione **0.7.1** rifinisce il tutorial ITA/ENG con spotlight adattivi, mini
 2. In Edge usa l'icona **Installa app** nella barra degli indirizzi oppure **Menu → App → Installa Fog of War**.
 3. Avvia almeno una volta la DM View e la Player View mentre sei online: in seguito l'app funziona anche offline.
 
-Non servono Node.js, download o installazioni manuali. Gli aggiornamenti vengono caricati automaticamente e i dati restano nel browser; conserva comunque un export `.fogproject.zip` dei progetti importanti.
+Non servono Node.js, download o installazioni manuali. Quando un aggiornamento è pronto, la DM View mostra **Aggiorna ora** e lascia al DM la scelta del momento; conserva comunque un export `.fogproject.zip` dei progetti importanti.
 
 ### Installazione manuale alternativa
 
@@ -38,7 +38,7 @@ GDR FogOfWar is a local tool for managing battlemaps, Fog of War, grids, and tem
 
 It is not intended to replace a VTT: its focus is a small, reliable toolkit for the physical table. This public repository contains official releases, documentation, and issue tracking. The source code is maintained privately, and pull requests are not accepted.
 
-Version **0.7.1** refines the ITA/ENG tutorial with adaptive spotlights, contextual mini-tours, and progression through safe interactions with highlighted controls.
+Version **1.0.0** is the first stable release, adding a pre-session check, safer projects, explicit PWA updates, a pointer palette, and privacy-safe diagnostics.
 
 ### Installation
 
@@ -46,7 +46,7 @@ Version **0.7.1** refines the ITA/ENG tutorial with adaptive spotlights, context
 2. In Edge, use the **Install app** icon in the address bar or choose **Menu → Apps → Install Fog of War**.
 3. Open the DM View and Player View once while online; the installed app will then work offline.
 
-Node.js, downloads, and manual setup are not required. Updates load automatically and data remains in your browser; always keep important projects backed up as `.fogproject.zip` files.
+Node.js, downloads, and manual setup are not required. When an update is ready, the DM View shows **Update now** and lets the DM choose when to apply it; always keep important projects backed up as `.fogproject.zip` files.
 
 #### Alternative manual installation
 

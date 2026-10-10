@@ -43,7 +43,9 @@ Il principio resta invariato: **uno strumento semplice e affidabile per sessioni
 - Passaggi maggiormente legati alle interazioni reali e testi più sintetici. **Completato.**
 - Mini-tour contestuali per Fog of War, visuale/proiezione, componenti/sagome e combattimento/progetto. **Completato.**
 
-## v1.0.0 — Prima versione stabile
+## v1.0.0 — Prima versione stabile — Completata
+
+Pubblicata il 10 ottobre 2026.
 
 - **Correttezza visiva:** risoluzione definitiva della rotazione senza deformazioni e verifica di pan, zoom, adattamento, blocco e sincronizzazione su schermi differenti.
 - **Controllo pre-sessione:** pannello non bloccante `Sessione pronta?` per mappa, Player View, versione, salvataggi pendenti, visuale e disponibilità offline.
@@ -105,7 +107,9 @@ The guiding principle remains: **a simple, reliable tool for in-person sessions,
 - Steps tied more closely to actual interactions, with shorter copy. **Completed.**
 - Contextual mini-tours for Fog of War, view/projection, components/templates, and combat/project. **Completed.**
 
-### v1.0.0 — First stable release
+### v1.0.0 — First stable release — Completed
+
+Released on 10 October 2026.
 
 - **Visual correctness:** definitive distortion-free rotation and verification of pan, zoom, fit, lock, and synchronisation across different displays.
 - **Pre-session check:** non-blocking `Session ready?` panel for map, Player View, version, pending saves, view, and offline availability.

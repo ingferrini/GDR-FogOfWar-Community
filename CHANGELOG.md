@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.0.0 — 2026-10-10
+
+- Pannello **Sessione pronta?** per controllare mappa, Player View, visuale, salvataggio, offline e versione.
+- Formati progetto espliciti, ZIP più rigorosi, sostituzione atomica e backup automatico prima dell'importazione.
+- Aggiornamenti PWA applicati soltanto su comando del DM e protezione dalle versioni DM/Player non allineate.
+- Dieci colori ad alto contrasto per puntatore e ping.
+- Esportazione diagnostica con anteprima e senza contenuti della campagna.
+- Rotazione e adattamento verificati su mappe e schermi con proporzioni differenti.
+
+---
+
+- **Session ready?** panel for map, Player View, view lock, saving, offline availability, and version checks.
+- Explicit project formats, stricter ZIP validation, atomic replacement, and automatic backup before imports.
+- PWA updates applied only on DM command, with protection against mismatched DM/Player versions.
+- Ten high-contrast colours for the pointer and ping.
+- Diagnostic export with preview and no campaign content.
+- Rotation and fitting verified across different map and display aspect ratios.
+
 ## v0.7.1 — 2026-09-22
 
 - Selettore con tour completo e mini-tour per Fog of War, visuale/proiezione, componenti/sagome e combattimento/progetto.

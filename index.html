@@ -8,9 +8,9 @@
     <link rel="icon" href="./icon-32.png" type="image/png" sizes="32x32" />
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <title>Fog of War — DM</title>
-    <script type="module" crossorigin src="./assets/dm-Bax9CJC7.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/sync-DVTmk_GO.js">
-    <link rel="stylesheet" crossorigin href="./assets/sync-3nxbS2aG.css">
+    <script type="module" crossorigin src="./assets/dm-xSqa9p5W.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/sync-C6Phy2Lq.js">
+    <link rel="stylesheet" crossorigin href="./assets/sync-CCU1F6Nv.css">
   </head>
   <body>
     <main id="app">
@@ -36,9 +36,19 @@
           <input id="project-file" type="file" accept=".zip,.fogproject,application/zip" hidden />
         </section>
 
+        <aside id="update-banner" class="update-banner" hidden>
+          <span>Nuova versione disponibile</span>
+          <button id="apply-update" class="primary">Aggiorna ora</button>
+        </aside>
+
         <section id="controls" hidden>
           <button id="open-player" class="primary wide">Apri Player View</button>
+          <section class="session-readiness" aria-label="Controllo pre-sessione">
+            <button id="session-readiness-toggle" class="wide" aria-expanded="false" aria-controls="session-readiness-list"><span id="session-readiness-dot" class="readiness-dot red"></span> Sessione pronta?</button>
+            <div id="session-readiness-list" class="session-readiness-list" hidden></div>
+          </section>
           <button data-tool="pointer" class="wide" title="Puntatore live (U)">◉ Puntatore</button>
+          <div id="pointer-palette" class="pointer-palette" role="group" aria-label="Colore puntatore"></div>
           <button id="toggle-combat" class="wide">⚔ Inizia combattimento</button>
 
           <div class="tool-section" data-control-section="fog">
@@ -186,7 +196,7 @@
           <div class="map-actions"><button id="rename-map">Rinomina</button><button id="duplicate-map">Duplica</button><button id="delete-map" class="danger">Elimina</button><button id="export-package">Esporta mappa</button><button id="export-project">Esporta progetto</button><button id="help" class="hotkey-button" aria-expanded="false" aria-controls="shortcut-panel">⌨ Hotkey</button></div>
         </section>
 
-        <footer><span id="save-status">Pronto</span><button id="restart-tutorial-footer" class="text-button">Tutorial</button></footer>
+        <footer><span id="save-status">Pronto</span><span class="footer-actions"><span id="app-version" class="app-version"></span><button id="open-diagnostics" class="text-button">Diagnostica</button><button id="restart-tutorial-footer" class="text-button">Tutorial</button></span></footer>
         <aside id="shortcut-panel" class="shortcut-panel" aria-label="Scorciatoie da tastiera" hidden>
           <header><h2>Hotkey</h2><button id="close-hotkeys" aria-label="Chiudi scorciatoie">×</button></header>
           <p class="overlay-hint">Seleziona una combinazione, poi premi la nuova hotkey.</p>
@@ -277,6 +287,15 @@
         </div>
         <p class="dialog-hint">Per maggiore precisione seleziona almeno 3 × 3 caselle seguendo i bordi della griglia.</p>
         <div class="dialog-actions"><button value="cancel">Annulla</button><button class="primary" value="default">Salva calibrazione</button></div>
+      </form>
+    </dialog>
+
+    <dialog id="diagnostics-dialog" class="diagnostics-dialog">
+      <form method="dialog">
+        <h2>Esporta diagnostica</h2>
+        <p class="dialog-hint">Controlla i dati prima del download. Non sono incluse immagini, nomi, note, statistiche o contenuti della campagna.</p>
+        <pre id="diagnostics-preview" tabindex="0"></pre>
+        <div class="dialog-actions"><button value="cancel">Chiudi</button><button id="download-diagnostics" type="button" class="primary">Scarica JSON</button></div>
       </form>
     </dialog>
 

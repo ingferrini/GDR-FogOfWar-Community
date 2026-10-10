@@ -1,4 +1,4 @@
-const CACHE = "fog-of-war-shell-v5";
+const CACHE = "fog-of-war-shell-v6";
 const PAGES = ["./", "./index.html", "./player.html"];
 const SHELL = [...PAGES, "./manifest.webmanifest", "./icon-32.png", "./icon-192.png", "./icon-512.png", "./icon.svg"];
 
@@ -15,8 +15,11 @@ self.addEventListener("install", (event) => {
       }
     }
     await cache.addAll([...assets]);
-    await self.skipWaiting();
   })());
+});
+
+self.addEventListener("message", (event) => {
+  if (event.data?.type === "APPLY_UPDATE") event.waitUntil(self.skipWaiting());
 });
 
 self.addEventListener("activate", (event) => {
